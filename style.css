@@ -12,29 +12,34 @@ colors
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 400; 
-    font-size: 18px;
     background-color:#c4defd;
     color:#ffffff;
+    line-height: 1.7;
    
 }
 .theme-button{
-    display: inline-block;
+    display:inline-block;
     background:#4f9cf9;
     border-radius:8px;
     padding:16px 24px !important;
+    text-decoration: none;
     color:#ffffff;
-    margin-left:24px;
+    
 }
+
+.theme-button:hover{
+    color: #ffffff;
+}
+
 .theme-button img{
     margin-left: 10px;
 }
 .theme-button-two{
-    display: inline-block;
+    display:inline-block;
     background:#ffe492;
     border-radius:8px;
     padding:16px 24px !important;
-    color:#043873 !important;
-    margin-left:24px;
+    color:#043873 !important; 
 }
 /* header css*/
 .header-area{
@@ -44,22 +49,51 @@ body{
 .header-area .nav-link{
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
-    font-weight:500px;
+    font-weight: 500px;
     padding:16px 24px !important;
 }
-@media (max-width:991px){  
-.theme-button{
-   margin-top:15px;
-    width:100%;
-   text-align:center;
-   margin-left:0; 
+.header-area .navber-toggler{
+    border: none;
+    box-shadow: none;
 }
-.theme-button-two{
-    margin-top:15px;
+.header-area .theme-button{
+    margin-left: 24px;
+}
+.header-area .theme-button-two{
+    margin-left: 24px;
+}
+
+@media (max-width: 991px)
+{
+.theme-button {
+   width:100%;
+  text-align:center;
+  margin-left:0;
+  margin-top:15px;  
+} 
+.theme-button-two {
     width:100%;
   text-align:center;
+  margin-top:15px;
   margin-left:0;  
 } 
-header-area .nav-link{
-    padding:16px 0 !important;
+.header-area .navber-toggler{
+    border:none;
+    box-shadow: none;
+}
+.header-area .nav-link{
+    padding: 16px 0;}
+.header-area .nav-link{
+        position: relative;}
+.header-area .nav-link: :after{
+        position:absolute;
+        right:12px;
+        top:50%;
+        transform:translateY(-50%);}
+ .header-area .theme-button{
+    margin-left: 0;
+ }
+ .header-area .theme-button-two{
+    margin-left: 0;
+ }       
 }
