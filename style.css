@@ -12,7 +12,7 @@ colors
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 400; 
-    background-color:#878181;
+    background-color:#3e4248;
     color:#ffffff;
     line-height: 1.7;
 }
@@ -33,6 +33,7 @@ body{
     display:inline-block;
     background:#ffe492;
     border-radius:8px;
+    margin-left: 24px;
     padding:16px 24px !important;
     color:#043873 !important; 
 }
@@ -98,7 +99,7 @@ background-image: url(img/hero-bg.png);
 background-size: cover;
 background-position: center;
 }
-.hero-text h3{
+.hero-area.hero-text h3{
     font-weight: 700;
     font-size: 52px;
 }
@@ -168,14 +169,34 @@ background-position: center;
     margin-top: 100px;
 }
 @media (max-width:991px){
-    .management-area .theme-button{
-        margin-bottom: 50px;
+    .management-area{
+        padding: 80px 0;
     }
     .work-management{
         margin-top: 60px;
     }
-.management-area{
-        background-color: #fff;
-        padding: 80px 0;
+    .management-area .theme-button
+    {
+        margin-bottom: 50px;
+    }
 }
+/*Extension area css*/
+.Extension-area{
+    padding: 140px 0;
+    background-color: #043873;
+}
+.Extension-area .theme-text h3{
+    color:#ffffff;
+}
+.Extension-area .theme-text p{
+    color: #ffffff;
+}
+@media (max-width:991px){   
+.Extension-area{
+    padding: 80px 0;
+    background-color: #043873;
+}
+    .Extension-area .theme-button{
+        margin-bottom: 50px;
+    }
 }
