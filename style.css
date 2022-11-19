@@ -9,7 +9,8 @@ colors
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@400;500;700&display=swap');
 /*basic css*/
-body{
+body
+{
     font-family: 'Inter', sans-serif;
     font-weight: 400; 
     background-color:#3e4248;
@@ -64,14 +65,16 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 }
-@media (max-width:991px){
+@media (max-width:991px)
+{
    .theme-text h3{
     text-align: center;
     font-size: 36px;
    } 
 }
 /* header css*/
-.header-area{
+.header-area
+{
     background-color:#043873;
      padding: 16px 0;
 }
@@ -93,7 +96,8 @@ body{
 }
 
 /* Hero css*/
-.hero-area{
+.hero-area
+{
     padding: 140px 0;
 background-image: url(img/hero-bg.png);
 background-size: cover;
@@ -106,7 +110,8 @@ background-position: center;
 .hero-area .theme-button{
     margin-top: 30px;
 }
-@media (max-width: 991px){
+@media (max-width: 991px)
+{
    .hero-area{
     padding: 80px 0;
    }
@@ -168,7 +173,8 @@ background-position: center;
 .work-management{
     margin-top: 100px;
 }
-@media (max-width:991px){
+@media (max-width:991px)
+{
     .management-area{
         padding: 80px 0;
     }
@@ -181,7 +187,8 @@ background-position: center;
     }
 }
 /*Extension area css*/
-.Extension-area{
+.Extension-area
+{
     padding: 140px 0;
     background-color: #043873;
 }
@@ -191,7 +198,8 @@ background-position: center;
 .Extension-area .theme-text p{
     color: #ffffff;
 }
-@media (max-width:991px){   
+@media (max-width:991px)
+{   
 .Extension-area{
     padding: 80px 0;
     background-color: #043873;
@@ -199,4 +207,20 @@ background-position: center;
     .Extension-area .theme-button{
         margin-bottom: 50px;
     }
+}
+/*Customise area css*/
+.Customise-area
+{
+    padding: 140px 0;
+    background-color: #fff;
+}
+@media (max-width:991px)
+{
+    .Customise-area{
+        padding: 80px 0;
+    }
+    .Customise-area .theme-button{
+        margin-bottom: 50px;
+    }
+
 }
