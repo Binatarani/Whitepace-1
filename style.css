@@ -292,11 +292,10 @@ background-position: center;
 }
 .your-work-area .theme-text h3{
     color: #fff;
-    font-size: 62px;
+    font-size: 50px;
 }
 .your-work-area .theme-text p{
     color: #fff;
-    font-size: 15px;
 }
 .your-work-area .theme-text h3 span::after{
     background-image: url(img/element\ 2.png);
