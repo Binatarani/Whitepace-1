@@ -292,36 +292,32 @@ background-position: center;
 }
 .your-work-area .theme-text h3{
     color: #fff;
-    font-size: 50px;
-}
-.your-work-area .theme-text p{
-    color: #fff;
+    font-size: 60px;
 }
 .your-work-area .theme-text h3 span::after{
-    background-image: url(img/element\ 2.png);
+    background-image: url(img/your-work-element.png);
     background-size: contain;
     background-position: bottom;
 }
-
+.your-work-area .theme-text p{
+    color: #fff;
+    font-size: 15px;
+}
 
 @media (max-width:991px){
     .your-work-area{
         padding: 80px 0;
     }
     .your-work-area .theme-text h3{
-        color: #ffffff;
-        font-size: 27px;
+        font-size: 36px;
           Line height:43.57px;
         text-align: center;  
     }
     .your-work-area .theme-text p{
-        color: #fff;
         font-size: 15px;
         text-align:left;
-        Line-height: 30sp;
         Line-height: 138%;
         Letter-spacing: -2%
-        marzin-top: 0;
     }
 }
 /* your task area css*/
@@ -356,4 +352,24 @@ background-position: center;
     margin-bottom: 50px;
  } 
 }
-
+/*apps area css*/
+.apps-area{
+    padding: 140px 0;
+    background-image: url(img/apps-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.apps-area .theme-text h3{
+    color: #fff;
+}
+.apps-area .theme-text p{
+    color: #fff;
+}
+@media (max-width:991px){
+.apps-area{ 
+    padding:140px 0 ;
+}
+.apps-image{
+    margin-bottom: 50px;
+}  
+}
