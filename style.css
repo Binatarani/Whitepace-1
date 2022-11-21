@@ -325,3 +325,13 @@ background-position: center;
         marzin-top: 0;
     }
 }
+/* your task area css*/
+.sponsor-area{
+    padding: 140px 0;
+    background-color: #fff;
+}
+@media (max-width:991px){
+    .sponsor-area{
+        padding: 80px 0;
+    }
+}
