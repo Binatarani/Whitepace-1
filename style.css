@@ -36,6 +36,7 @@ body
     border-radius:8px;
     padding:16px 24px !important;
     color:#043873 !important; 
+    margin-right: 24px !important;
 }
 .theme-button-three{
     display:inline-block;
@@ -72,13 +73,6 @@ body
     background-image: url(img/element.png);
     background-size:cover;
     background-repeat: no-repeat;
-}
-@media (max-width:991px)
-{
-   .theme-text h3{
-    text-align: center;
-    font-size: 36px;
-   } 
 }
 /* header css*/
 .header-area
@@ -119,8 +113,6 @@ background-position: center;
 .hero-area .theme-button{
     margin-top: 30px;
 }
-@media (max-width: 991px)
-{
    .hero-area{
     padding: 80px 0;
    }
@@ -139,45 +131,6 @@ background-position: center;
 .header-area .theme-button-two{
     margin-left: 0;
 }
-}
-@media (max-width: 991px)
-{
-    .header-area .theme-button{
-        width: 100%;
-    }
-.theme-button {
-  text-align:center;
-  margin-left:0;
-  margin-top:15px;  
-} 
-.theme-button-two {
-    width:100%;
-  text-align:center;
-  margin-top:15px;
-  margin-left:0;  
-} 
-.header-area .navber-toggler{
-    border:none;
-    box-shadow: none;
-}
-.header-area .nav-link{
-    padding: 16px 0;
-}
-.header-area .nav-link{
-        position: relative;
-    }
-.header-area .nav-link::after{
-        position:absolute;
-        right:12px;
-        top:50%;
-        transform:translateY(-50%);}
- .header-area .theme-button{
-    margin-left: 0;
- }
- .header-area .theme-button-two{
-    margin-left: 0;
- }       
-}
 /* Management area css*/
 .management-area{
     background-color: #fff;
@@ -189,19 +142,6 @@ background-position: center;
 }
 .work-management{
     margin-top: 100px;
-}
-@media (max-width:991px)
-{
-    .management-area{
-        padding: 80px 0;
-    }
-    .work-management{
-        margin-top: 60px;
-    }
-    .management-area .theme-button
-    {
-        margin-bottom: 50px;
-    }
 }
 /*Extension area css*/
 .Extension-area
@@ -215,27 +155,11 @@ background-position: center;
 .Extension-area .theme-text p{
     color: #ffffff;
 }
-@media (max-width:991px)
-{   
-.Extension-area{
-    padding: 80px 0;
-    background-color: #043873;
-}
-    .Extension-area .theme-button{
-        margin-bottom: 50px;
-    }
-}
 /*Customise area css*/
 .Customise-area
 {
     padding: 140px 0;
     background-color: #fff;
-}
-@media (max-width:991px)
-{
-.Customise-area{
-        padding: 80px 0;
-    }
 }
 /*Pricing area css*/
 .pricing-area
@@ -268,10 +192,17 @@ background-position: center;
 }
 .single-pricing ul li{
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
 }
 .single-pricing ul li :last-child{
     margin: 0;
+}
+.single-pricing img{
+    height: 21px !important;
+    width: 21px !important;
+    margin-right: 10px;
 }
 .special-pricing{
     padding: 80px 44px;
@@ -281,14 +212,24 @@ background-position: center;
 .special-pricing h2{
     color:#FFE492
 }
-@media (max-width:991px){
-    .pricing-area{
-        padding: 80px 0;
-    }
-    .single-pricing{
-        margin-bottom: 30px;
-    }
+.pricing-area .owl-stage{
+    display: flex;
+    align-items: center;
 }
+.pricing-area .owl-dots{
+    text-align: center;
+}
+.pricing-area .owl-dots button{
+        height: 15px;
+        width: 15px;
+        background-color: #4F9CF9!important;
+        border-radius: 50%;
+        margin: 0 5px;  
+    }
+    .pricing-area .owl-dots button.active{
+       background-color: #043873 !important;
+     
+    }
 /*Your work area css*/
 .your-work-area{
     padding: 140px 0;
@@ -296,7 +237,7 @@ background-position: center;
 }
 .your-work-area .theme-text h3{
     color: #fff;
-    font-size: 60px;
+    
 }
 .your-work-area .theme-text h3 span::after{
     background-image: url(img/your-work-element.png);
@@ -305,34 +246,11 @@ background-position: center;
 }
 .your-work-area .theme-text p{
     color: #fff;
-    font-size: 15px;
-}
-
-@media (max-width:991px){
-    .your-work-area{
-        padding: 80px 0;
-    }
-    .your-work-area .theme-text h3{
-        font-size: 36px;
-          Line height:43.57px;
-        text-align: center;  
-    }
-    .your-work-area .theme-text p{
-        font-size: 15px;
-        text-align:left;
-        Line-height: 138%;
-        Letter-spacing: -2%
-    }
 }
 /* your task area css*/
 .your-task-area{
     padding: 140px 0;
     background-color: #fff;
-}
-@media (max-width:991px){
-    .your-task-area{
-        padding: 80px 0;
-    }
 }
 /*sponsors area css*/
 .sponsors-area{
@@ -345,16 +263,6 @@ background-position: center;
 .single-sponsor img{
     height: 55px;
     width: auto;
-}
-@media (max-width:991px){
-    .sponsors-area{
-    padding-top: 80px;
-    padding-bottom: 30px;
-
-    }
- .single-sponsor{
-    margin-bottom: 50px;
- } 
 }
 /*apps area css*/
 .apps-area{
@@ -369,14 +277,6 @@ background-position: center;
 .apps-area .theme-text p{
     color: #fff;
 }
-@media (max-width:991px){
-.apps-area{ 
-    padding:140px 0 ;
-}
-.apps-image{
-    margin-bottom: 50px;
-}  
-}
 /*Testimonial area css
 */
 .testimonial-area{
@@ -388,7 +288,7 @@ background-position: center;
 }
 .single-testimonial{
     background: #4f9cf9;
-    box-shadow: 15px 10px 50px rgba(0,0,0,1);
+    box-shadow: 15px 10px 50px rgb(227, 211, 211);
     border-radius: 10px;
     padding: 50px 30px;
     color:#fff;
@@ -397,18 +297,15 @@ background-position: center;
 .single-testimonial:hover{
     background-color: #fff;
     color: #212529;
-    cursor: pointer;
 }
 .testimonial-text{
     border-bottom: 1px solid #fff;
 }
-.testimonial-text img{
-margin-bottom: 40px;
-height: 60px;
-width: auto !important;
+.testimonial-text i{
+font-size: 60px;
 }
 .testimonial-text p{
-    margin-bottom: 25px;
+    margin-bottom: 25px;  
 }
 .testimonial-author{
     margin-top: 40px;
@@ -419,27 +316,25 @@ width: auto !important;
 }
 .author-text h3{
 font-size: 18px;
-color: #231d1d;
+color: #212529;
 }
 .author-text p{
     margin-bottom: 0;
 }
 .testimonial-area .owl-dots{
     text-align: center;
-    margin-top: 50px;
 }
  .testimonial-area .owl-dots button{
     height: 15px;
     width: 15px;
-    background-color: #232425 !important;
+    background-color: #4F9CF9!important;
     border-radius: 50%;
     margin: 0 5px;
 }
-
-@media (max-width:991px){
-    .testimonial-area{ 
-        padding: 80px 0;
-    }}
+.testimonial-area .owl-dots button.active{
+   background-color: #043873 !important;
+ 
+}
 /*Trial area css*/
 .trial-area{
     padding: 140px 0;
@@ -460,27 +355,10 @@ color: #231d1d;
     margin: 0 30px;
     text-decoration: none;
 }
-
-@media (max-width:991px){
-    .trial-area{ 
-        padding: 80px 0;
-    }
-    .trial-text h3{
-        font-size: 36px;
-    }
-    .trial-text p{
-        font-size: 18px;
-    } 
-.trial-img a{
-    margin: 0;
-    text-decoration: none;
-    margin-right: 40px;
-}
-}
 /*footer area css*/
 .footer-area{
     background-color: #043873;
-    border-top: 1px solid #4f9cf9;
+    border-top: 1px solid #2e4e73;
     padding-top: 140px;
 }
 .footer-top{
@@ -516,17 +394,203 @@ color: #231d1d;
     font-size: 28px;
     margin-bottom: 15px;
 }
+.footer-bottom{
+  border-top: 1px solid #2e4e73;
+  padding: 32px 0;
+}
+.footer-lan a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-lan .dropdown-menu a{
+    color: #212529;
+}
+.footer-lan i{
+    margin-right: 10px;
+}
+.footer-social{
+    text-align: center;
+}
+.footer-social a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left:32px;
+}
+@media (max-width:1399px){
+   .header-area{
+    font-size: 16px;
+   }
+}
+@media (max-width:1199px){
+    .header-area{
+     font-size: 14px;
+    }
+    .header-area .nav-link{
+        padding: 10px 15px !important;
+    }
+ }
+
 @media (max-width:991px){
-    .footer-top{
+    
+    /*Defult css*/
+    .theme-text{
         text-align: center;
     }
+    .theme-text h3{
+       font-size: 36px;
+    } 
+    .header-area{
+        font-size: 18px;
+    }
+      /*header area css*/
+     .header-area .theme-button{
+        width: 100%;
+    }
+     .theme-button {
+        text-align:center;
+        margin-left:0;
+        margin-top:15px;  
+    } 
+     .theme-button-two {
+       width:100%;
+       text-align:center;
+       margin-top:15px;
+       margin-left:0;  
+    } 
+    .header-area .navber-toggler{
+       border:none;
+       box-shadow: none;
+    }
+    .header-area .nav-link{
+       padding: 16px 0;
+    }
+    .header-area .nav-link{
+        position: relative;
+    }
+    .header-area .nav-link::after{
+        position:absolute;
+        right:12px;
+        top:50%;
+        transform:translateY(-50%);}
+    .header-area .theme-button{
+        margin-left: 0;
+    }
+    .header-area .theme-button-two{
+        margin-left: 0;
+    }   
+ /*Managment area css*/
+    .management-area{
+        padding: 80px 0;
+    }
+    .work-management{
+         margin-top: 60px;
+    }
+    .management-area .theme-button
+{
+        margin-bottom: 50px;
+    }
+/*Extension area css*/
+.Extension-area{
+    padding: 80px 0;
+    background-color: #043873;
+}
+    .Extension-area .theme-button{
+        margin-bottom: 50px;
+    }
+    /*Customise area css */
+    .Customise-area{
+        padding: 80px 0;
+    }
+    /*Pricing area css */
+    .pricing-area{
+        padding: 80px 0;
+    }
+    .single-pricing{
+        margin-bottom: 30px;
+    }
+    /*Your work area css */
+    .your-work-area{
+        padding: 80px 0;
+    }
+    .your-work-area .theme-text h3{
+        font-size: 36px;
+        text-align: center;  
+    }
+    .your-work-area .theme-text p{
+        font-size: 15px;
+        text-align:left;
+        Line-height: 138%;
+        Letter-spacing: -2%
+    }
+    /*Your task area css */
+    .your-task-area{
+        padding: 80px 0;
+    }
+    /*Sponsors area css */
+    .sponsors-area{
+        padding-top: 80px;
+        padding-bottom: 30px;
+    
+        }
+     .single-sponsor{
+        margin-bottom: 50px;
+     } 
+     /*Apps area css */
+     .apps-area{ 
+        padding:140px 0 ;
+    }
+    .apps-image{
+        margin-bottom: 50px;
+    } 
+    /*Testimonial css */
+    .testimonial-area{ 
+        padding: 80px 0;
+    }
+    /*Trial area css */
+    .trial-area{ 
+        padding: 80px 0;
+    }
+    .trial-text h3{
+        font-size: 36px;
+    }
+    .trial-text p{
+        font-size: 18px;
+    } 
+.trial-img a{
+    margin: 0;
+    text-decoration: none;
+    margin-right: 40px;
+} 
+/*Footer area css */
+    .footer-top{
+    text-align: center;
+}
     .footer-about{
-        margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
+}
     .footer-link{
-        margin: 40px 0;
-    }
+    margin: 40px 0;
+}
     .footer-contact{
-        margin-top: 40px;
-    }
+    margin-top: 40px;
+}
+    .footer-bottom{
+    border-top: none;
+}
+    .footer-lan{
+    text-align: center;
+}
+    .footer-copyright{
+    text-align: center;
+    padding: 32px 0;
+}
+    .footer-social{
+    text-align: center;
+    border-top: 1px solid #2e4e73;
+    padding: 32px;
+}
+   .footer-social a{
+    margin: 0 16px;
+} 
 }
